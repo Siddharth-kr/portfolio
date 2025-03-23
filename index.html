@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h3>My Portfolio</h3>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul  class="nav-links">
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>  
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="Profile" class="Profile">
+        <div class="container">
+        <div class="Profile-content">
+            <img src="/image/image.jpg" alt="" class="profile-img">
+            <h1>Hi, I'm<span class="highlight"> Siddharth kumar</span></h1>
+            <h3>Java Full Stack Devloper | web Designer</h3>
+
+            <p>Passionate about scalable Web application & crafting user friendly design. Lets work together to create something amazing</p>            
+        </div>
+
+        <div class="buttons">
+            <!-- <a href="" class="btn hire-me">Hire-me</a> -->
+            <a href="/image/My_Resume.pdf" class="btn download-cv">Download-CV</a>
+        </div>
+        </div>
+    </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <p><strong>Biju Patnaik University of Technology</strong> - 2022-2026</p>
+                    <p>Focused on software development, web technologies, and full-stack applications.</p>
+                </div>
+    
+                <div class="education-item">
+                    <h3>Higher Secondary Education</h3>
+                    <p><strong>KSBHS School</strong> - 2020-2022</p>
+                    <p>Completed studies with a focus on mathematics, physics, chemistry, hindi, english and biology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <h3>Frontend Development</h3>
+                        <p>HTML, CSS, JavaScript, React.js</p>
+                    </div>
+        
+                    <div class="skill-item">
+                        <h3>Backend Development</h3>
+                        <p>Java, SpringBoot,</p>
+                    </div>
+        
+                    <div class="skill-item">
+                        <h3>Database Management</h3>
+                        <p>MySQL</p>
+                    </div>
+        
+                    <div class="skill-item"  id="tools">
+                        <h3>Tools & Platforms</h3>
+                        <p>Git, GitHub, AWS</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Soft Skills</h3>
+                        <p>Communication, Hardworking, Problem Solver</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-list">
+        
+                    <div class="project-item">
+                        <img src="https://imgs.search.brave.com/CODOXnbhMOD2TmOakWqdygfop2fAUjwAdcGg3sFYWpE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnplZ29jbG91ZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDkvd2ViLWRl/dmVsb3Blci1wb3J0/Zm9saW8uanBn" alt="Project 1">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my skills, projects, and contact information.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+        
+                    <div class="project-item">
+                        <img src="https://imgs.search.brave.com/Bt-6xQwE04D3EF5Du4xT4G1eT_xJeityFxCAj7TbsiM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wdzRr/Y2RuLWd2Y3lkZmcz/YjZobmc0ZjcuejAy/LmF6dXJlZmQubmV0/L21lZGlhLzI2Njgx/L2NydXNoLXRoYXQt/YnVnLnBuZz9wcmVz/ZXQ9bGlzdGluZzM2/MA" alt="Project 2">
+                        <h3>Insect Game</h3>
+                        <p>Developed a fully functional insect game using HTML, CSS and JavaScript.</p>
+                        <a href="https://siddharth-kr.github.io/insect-game/index.html" class="btn">View Project</a>
+                    </div>
+        
+                    <!-- <div class="project-item">
+                        <img src="" alt="Project 3">
+                        <h3>Task Manager App</h3>
+                        <p>A task management application built with Java Spring Boot and MySQL.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div> -->
+        
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="your gmail" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+        
+                <div class="contact-info">
+                    <p><strong>Email:</strong> Siddharthkumar5364@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 7717789698</p>
+                    <p><strong>Location:</strong> bhubaneswar, india</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="about">
+                    <h3>About Me</h3>
+                    <p>Passionate web developer with a love for creating interactive and dynamic user experiences.</p>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social">
+                    <h3>Connect</h3>
+                    <a href="https://github.com/Siddharth-kr" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/siddharth-kumar-17b692259" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/it5_siddharth" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                    </a>
+                    <a href="mailto:Siddharthkumar5364@gmail.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                &copy; 2025 Siddharth Kumar. All rights reserved.
+            </div>
+        </footer>
+        
+</body>
+</html>
